@@ -10,7 +10,14 @@
 - These 3 different opensource products are most commonly used in Log analysis in IT env.
 - Logstash collects and parse logs, and then ElasticSearch indexes and stores the information. Kibana then presents the data in visualizations that provide actionable insights into one's env
 ## Why ELK popular
-
+![Chart](https://github.com/khuongdv/melk-boilerplate/blob/master/imgs/what-is-elk-stack.jpg?raw=true "Chart")
+- ELK Stack fulfills a need in the log analytics space
+- ELK stack is simple but robust log analysis platform
+- IT organizations are favoring open source products in general
+- ELK stack is adopted by Netflix, Facebook, Microsoft, LinkedIn and Cisco
+## Why log analysis becoming more important
+- More IT infras move to public clouds (AWS, azure, ect.) so cloud security tools and log analytics platforms are becoming more critical
+- Log Management platforms can monitor all infras issues as well ass process OS logs, server logs, app logs, web traffic analysis...
 # An Elasticsearch tutorial
 
 # ElasticSearch Cluster Setup and Upgrading
