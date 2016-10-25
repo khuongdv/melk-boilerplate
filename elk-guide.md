@@ -110,7 +110,11 @@ curl -X GET http://127.0.0.1:9200/_search?q=logged
 - Send a http DELETE request to the index URI
 - We can specify the ID in the body, or use a query instead
 ## ElasticSearch Cluster Setup and Upgrading
-
+![ElasticSearch Cluster Setup and Upgrading](https://raw.githubusercontent.com/khuongdv/melk-boilerplate/master/imgs/elasticsearch-cluster-setup-update.jpg "ElasticSearch Cluster Setup and Upgrading")
+- Checklist of tips that DevOps engineers and SysAd need to remember when want to upgrade ElasticSearch clusters:
+    - Reading Before your update
+    - Planning Your Cluster update
+    - Testing your cluster update
 ## Logstash tutorial
 ## Kibana tutorial
 ## Creating Customized Kibana Visualizations
