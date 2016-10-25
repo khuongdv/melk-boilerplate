@@ -115,6 +115,7 @@ curl -X GET http://127.0.0.1:9200/_search?q=logged
     - Reading Before your update
     - Planning Your Cluster update
     - Testing your cluster update
+    
 ## Logstash tutorial
 ## Kibana tutorial
 ## Creating Customized Kibana Visualizations
