@@ -27,3 +27,4 @@ Lastly, we see the output section. The first conditional ensures, once again, th
 
 ### Working with Logstash Plugins
 - Plugins are managed by __bin/plugin__.
+- We need to crate a config file and then specify pipeline in there. When start logstash, specify the file path.
