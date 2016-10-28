@@ -1,5 +1,8 @@
 package com.khuongdv;
 
+import com.khuongdv.cmdhandler.HandlerFactory;
+import com.khuongdv.cmdhandler.ICommandHandler;
+
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.List;
@@ -16,6 +19,7 @@ public class App {
      * @param args
      */
     public static void main(String[] args) {
+        args = new String[]{"help"};
         if (args == null || args.length != 1) {
             showInvalidParam();
             return;
@@ -24,6 +28,16 @@ public class App {
         if (!isAValidCommand(command)) {
             return;
         }
+        process(command);
+    }
+
+    /**
+     *
+     * @param command
+     */
+    private static void process(String command) {
+        ICommandHandler handler = HandlerFactory.getHandler(command);
+        handler.template();
     }
 
     /**
@@ -38,6 +52,7 @@ public class App {
         if (listCommands.contains(command)) {
             return true;
         }
+        showInvalidParam();
         return false;
     }
 
@@ -46,7 +61,7 @@ public class App {
      */
     private static void showInvalidParam() {
         OUT.println();
-        OUT.println("Invalid param. Retry with parameter \"help\" for more information.");
+        OUT.println("\tInvalid param. Retry with parameter \"help\" for more information.");
         OUT.println();
     }
 }
